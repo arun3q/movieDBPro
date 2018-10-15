@@ -19,5 +19,5 @@ from movie_api import urls as api_url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("api/", include(api_url, namespace="api")),
+    path("api/", include(api_url)),
 ]
