@@ -29,6 +29,6 @@ class Command(BaseCommand):
                     genre, created = Genre.objects.get_or_create(name=name)
                     movie.genre.add(genre)
                 movie.save()
-                print movie
+                print(movie)
 
 
