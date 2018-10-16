@@ -24,5 +24,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include(api_url)),
-    path("", IndexView)
+    path("", IndexView.as_view())
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
